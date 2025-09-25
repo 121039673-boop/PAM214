@@ -1,6 +1,16 @@
 
+
+
 function verificarUsuario(usuario){
     //Retorna una promesa aqui
+    return new Promise((resolve, reject) =>{
+        if(usuario == "admin"){
+            resolve("Acceso concedido");
+        }
+        else{
+            reject("Acceso denegado");
+        }
+    });
 }
 
 //Usa .then() y .catch() para manejar el resultado
