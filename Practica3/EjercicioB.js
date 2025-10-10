@@ -1,6 +1,4 @@
 
-
-
 function verificarUsuario(usuario){
     //Retorna una promesa aqui
     return new Promise((resolve, reject) =>{
@@ -13,10 +11,11 @@ function verificarUsuario(usuario){
     });
 }
 
+
 //Usa .then() y .catch() para manejar el resultado
 verificarUsuario("admin")
 .then(res => console.log(res)) //Acceso concedido
-.catch(err => console.error(err)); //Acceso denegado
+.catch(err => console.error(err)); 
 
 verificarUsuario("Valeria")
 .then(res => console.log(res))
