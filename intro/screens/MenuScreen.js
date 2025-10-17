@@ -1,7 +1,7 @@
 import { Text,StyleSheet, View, Button } from 'react-native'
 import React, { useState } from 'react'
 import ContadorScreen from './ContadorScreen'
-import BotnesScreen from './BotonesScreen'
+import BotonesScreen from './BotonesScreen'
 import BottomScreen from './bottomScreen'
 
 export default function MenuScreen () {
