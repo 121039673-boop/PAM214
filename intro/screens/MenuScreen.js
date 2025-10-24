@@ -4,6 +4,7 @@ import ContadorScreen from './ContadorScreen'
 import BotonesScreen from './BotonesScreen'
 import BottomScreen from './bottomScreen'
 import TextScreen from './textScreen'
+import ImageScreen from './imageScreen'
 
 export default function MenuScreen () {
 
@@ -16,6 +17,8 @@ export default function MenuScreen () {
         return <BotonesScreen/>
          case 'text' :
             return <TextScreen/>
+         case 'image' :
+            return <ImageScreen/>
         case 'bottom' :
             return <bottomScreen/>
         case 'menu':
