@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import ContadorScreen from './ContadorScreen'
 import BotonesScreen from './BotonesScreen'
 import BottomScreen from './bottomScreen'
+import TextScreen from './textScreen'
 
 export default function MenuScreen () {
 
@@ -13,6 +14,8 @@ export default function MenuScreen () {
             return <ContadorScreen/>
         case 'botones':
         return <BotonesScreen/>
+         case 'text' :
+            return <TextScreen/>
         case 'bottom' :
             return <bottomScreen/>
         case 'menu':
