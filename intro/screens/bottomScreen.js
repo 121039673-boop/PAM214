@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Button, Modal, Pressable, StyleSheet } from 'react-native';
 
-export default function MenuScreen() {
+export default function BottomScreen() {
   const [visible, setVisible] = useState(false);
 
   return (

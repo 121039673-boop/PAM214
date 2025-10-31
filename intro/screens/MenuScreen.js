@@ -5,6 +5,11 @@ import BotonesScreen from './BotonesScreen'
 import BottomScreen from './bottomScreen'
 import TextScreen from './textScreen'
 import ImageScreen from './imageScreen'
+//import RepasoScreen from './repasoScreen'
+import ScrollViewScreen from './scrollViewScreen'
+import ActivityScreen from './activityScreen'
+
+
 
 export default function MenuScreen () {
 
@@ -14,19 +19,23 @@ export default function MenuScreen () {
         case 'contador' :
             return <ContadorScreen/>
         case 'botones':
-        return <BotonesScreen/>
+            return <BotonesScreen/>
          case 'text' :
             return <TextScreen/>
          case 'image' :
             return <ImageScreen/>
         case 'bottom' :
             return <bottomScreen/>
+        case 'Repaso' :
+            return <RepasoScreen/>
+        case 'scrollView' :
+            return <ScrollViewScreen/>
+       case 'activity' : 
+    return <ActivityScreen/>
         case 'menu':
         default:
             return (
                 
-     
-
         <View style={styles.container}> 
         <Text style={styles.titulo}>Menu Practicas</Text> 
         
@@ -43,6 +52,8 @@ export default function MenuScreen () {
         <Button color='#f4a30dff' onPress={()=>setScreen('flatList')} title='Pract:FlatList y Section List' />
         <Button color='#3d818cff' onPress={()=>setScreen('modal')} title='Pract:Modal' />
         <Button color='#f4a30dff' onPress={()=>setScreen('bottom')} title='Pract:Bottom Sheet' />
+        <Button color='#3b6782ff' onPress={()=>setScreen('Repaso')} title='Pract: Repaso 1' />
+            
       </View>
       </View>
 
