@@ -11,6 +11,7 @@ import ActivityScreen from './activityScreen'
 
 
 
+
 export default function MenuScreen () {
 
     const[screen,setScreen]=useState('menu');
@@ -32,6 +33,7 @@ export default function MenuScreen () {
             return <ScrollViewScreen/>
        case 'activity' : 
     return <ActivityScreen/>
+     
         case 'menu':
         default:
             return (
@@ -53,6 +55,7 @@ export default function MenuScreen () {
         <Button color='#3d818cff' onPress={()=>setScreen('modal')} title='Pract:Modal' />
         <Button color='#f4a30dff' onPress={()=>setScreen('bottom')} title='Pract:Bottom Sheet' />
         <Button color='#3b6782ff' onPress={()=>setScreen('Repaso')} title='Pract: Repaso 1' />
+        <Button color='#3b6782ff' onPress={()=>setScreen('proyecto')} title='proyecto' />
             
       </View>
       </View>

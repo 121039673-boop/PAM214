@@ -43,6 +43,8 @@ export default function ImageScreen() {
         }} // URL de la imagen que se usa como fondo
         style={styles.background} // se aplican los estilos del fondo
       >
+
+        
         {/* View que contiene el texto y el botón, con un fondo semitransparente */}
         <View style={styles.overlay}>
           {/* Texto principal */}

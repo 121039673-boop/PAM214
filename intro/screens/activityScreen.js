@@ -3,7 +3,8 @@ import { View, Text, Button, ActivityIndicator, StyleSheet } from 'react-native'
 
     
 export default function ActivityScreen () {
-   const [cargando, setCargando] = useState(false);
+   
+  const [cargando, setCargando] = useState(false);
 
   const iniciarCarga = () => {
     setCargando(true);
