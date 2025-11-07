@@ -39,6 +39,7 @@ export default function App() {
   }
 
   return (
+    
     <SafeAreaView style={{ flex: 1 }}>
 
       <ImageBackground
@@ -47,6 +48,11 @@ export default function App() {
         }}
         style={styles.background} // se aplican los estilos del fondo
       >
+        <ScrollView
+    showsVerticalScrollIndicator={false}
+        refreshControl={
+              <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+            }>
         <View style={styles.overlay}>
           {/* Texto principal */}
           <Text style={styles.title}>Valeria Briones Patiño</Text>
@@ -90,17 +96,14 @@ export default function App() {
             onPress={mostrarAlerta}
             color="#2377caff" />
 
-          <ScrollView
-            showsVerticalScrollIndicator={false}
-            refreshControl={
-              <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
-            }>
+          
+            
               
-            stickyHeaderIndices={[0]}
-            </ScrollView>
+            
 
 
         </View>
+        </ScrollView>
       </ImageBackground>
     </SafeAreaView >
   );
