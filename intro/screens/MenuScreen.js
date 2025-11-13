@@ -8,6 +8,7 @@ import ImageScreen from './imageScreen'
 //import RepasoScreen from './repasoScreen'
 import ScrollViewScreen from './scrollViewScreen'
 import ActivityScreen from './activityScreen'
+import FlatListScreen from './FlatListScreen'
 
 
 
@@ -32,8 +33,9 @@ export default function MenuScreen () {
         case 'scrollView' :
             return <ScrollViewScreen/>
        case 'activity' : 
-    return <ActivityScreen/>
-     
+             return <ActivityScreen/>
+        case 'FlatList' :
+            return <FlatListScreen/>
         case 'menu':
         default:
             return (
@@ -51,7 +53,7 @@ export default function MenuScreen () {
         <Button color='#3d818cff' onPress={()=>setScreen('image')} title='Pract:ImageBackground & SlapshScreen' />
         <Button color='#f4a30dff' onPress={()=>setScreen('scrollView')} title='Pract:ScrollView' />
         <Button color='#3d818cff' onPress={()=>setScreen('activity')} title='Pract:ActivityIndicator' />
-        <Button color='#f4a30dff' onPress={()=>setScreen('flatList')} title='Pract:FlatList y Section List' />
+        <Button color='#f4a30dff' onPress={()=>setScreen('FlatList')} title='Pract:FlatList y Section List' />
         <Button color='#3d818cff' onPress={()=>setScreen('modal')} title='Pract:Modal' />
         <Button color='#f4a30dff' onPress={()=>setScreen('bottom')} title='Pract:Bottom Sheet' />
         <Button color='#3b6782ff' onPress={()=>setScreen('Repaso')} title='Pract: Repaso 1' />
