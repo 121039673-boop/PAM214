@@ -2,14 +2,14 @@ import { Text,StyleSheet, View, Button } from 'react-native'
 import React, { useState } from 'react'
 import ContadorScreen from './ContadorScreen'
 import BotonesScreen from './BotonesScreen'
-import BottomScreen from './bottomScreen'
 import TextScreen from './textScreen'
 import ImageScreen from './imageScreen'
 //import RepasoScreen from './repasoScreen'
 import ScrollViewScreen from './scrollViewScreen'
 import ActivityScreen from './activityScreen'
 import FlatListScreen from './FlatListScreen'
-
+import ModalScreen from './ModalScreen'
+import BottomScreen from './BottomScreen'
 
 
 
@@ -26,8 +26,6 @@ export default function MenuScreen () {
             return <TextScreen/>
          case 'image' :
             return <ImageScreen/>
-        case 'bottom' :
-            return <bottomScreen/>
         case 'Repaso' :
             return <RepasoScreen/>
         case 'scrollView' :
@@ -36,6 +34,10 @@ export default function MenuScreen () {
              return <ActivityScreen/>
         case 'FlatList' :
             return <FlatListScreen/>
+        case 'Modal' :
+            return <ModalScreen/>
+        case 'Bottom' : 
+            return <BottomScreen/>
         case 'menu':
         default:
             return (
@@ -54,8 +56,8 @@ export default function MenuScreen () {
         <Button color='#f4a30dff' onPress={()=>setScreen('scrollView')} title='Pract:ScrollView' />
         <Button color='#3d818cff' onPress={()=>setScreen('activity')} title='Pract:ActivityIndicator' />
         <Button color='#f4a30dff' onPress={()=>setScreen('FlatList')} title='Pract:FlatList y Section List' />
-        <Button color='#3d818cff' onPress={()=>setScreen('modal')} title='Pract:Modal' />
-        <Button color='#f4a30dff' onPress={()=>setScreen('bottom')} title='Pract:Bottom Sheet' />
+        <Button color='#3d818cff' onPress={()=>setScreen('Modal')} title='Pract:Modal' />
+        <Button color='#f4a30dff' onPress={()=>setScreen('Bottom')} title='Pract:Bottom Sheet' />
         <Button color='#3b6782ff' onPress={()=>setScreen('Repaso')} title='Pract: Repaso 1' />
         <Button color='#3b6782ff' onPress={()=>setScreen('proyecto')} title='proyecto' />
             
